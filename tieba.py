@@ -166,12 +166,12 @@ class BDTB:
  
  
  
-# print u"请输入帖子代号"
-# baseURL = 'http://tieba.baidu.com/p/' + str(raw_input(u'http://tieba.baidu.com/p/'))
-# seeLZ = raw_input("是否只获取楼主发言，是输入1，否输入0\n")
-# floorTag = raw_input("是否写入楼层信息，是输入1，否输入0\n")
-baseURL = 'http://tieba.baidu.com/p/5313994187'
-seeLZ = 1
-floorTag = 1
+print u"请输入帖子代号"
+baseURL = 'http://tieba.baidu.com/p/' + str(raw_input(u'http://tieba.baidu.com/p/'))
+seeLZ = raw_input("是否只获取楼主发言，是输入1，否输入0\n")
+floorTag = raw_input("是否写入楼层信息，是输入1，否输入0\n")
+# baseURL = 'http://tieba.baidu.com/p/5313994187'
+# seeLZ = 1
+# floorTag = 1
 bdtb = BDTB(baseURL,seeLZ,1)
 bdtb.start()
